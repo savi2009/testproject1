@@ -4,14 +4,18 @@ pipeline {
     stages {
         stage('checkoout') {
             steps {
+                    git branch: 'main', url: 'https://github.com/savi2009/testproject1.git'
             }
         }
         stage('terraform init') {
             steps {
+                     sh 'terraform init'
             }
         }
         stage('terraform apply') {
             steps {
+                    sh 'terraform apply --auto-approve'
             }
         }
     }
+}
