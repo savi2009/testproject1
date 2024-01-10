@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('checkoout') {
+            steps {
+            }
+        }
+        stage('terraform init') {
+            steps {
+            }
+        }
+        stage('terraform apply') {
+            steps {
+            }
+        }
+    }
